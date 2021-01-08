@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 public class Queen extends Piece{
 
+	Queen(int x1,int y1,int c1){
+		super(x1,y1,c1);
+	}
 	
 	ArrayList<Coordinate> getAllMoves(Piece[][] board) {
-		
+
 		ArrayList<Coordinate> ret = new ArrayList<>();
 		for(int i=x-1;i>=0;i--) {//move to left
 			if( board[i][y]==null ) ret.add(new Coordinate(i,y));

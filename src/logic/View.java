@@ -1,4 +1,4 @@
-package Logic;
+package logic;
 
 import java.awt.Color;
 import java.awt.Dimension;
